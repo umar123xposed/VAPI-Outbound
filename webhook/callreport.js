@@ -1,7 +1,7 @@
 import express from "express"
 const router = express.Router()
 
-router.post("/vapi/webhook", (req, res) => {
+router.post("/webhook", (req, res) => {
     const event = req.body;
     console.log("📞 VAPI Webhook Event:", event);
 
